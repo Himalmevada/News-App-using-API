@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatile" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>NEWS App</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <nav>
+            <div class="main-nav container flex">
+                <a href="#" onclick="reload()" class="company">
+                    <img class="logo-img" src="./logo.jpg" alt="company logo">
+                </a>
+                <div class="nav-link">
+                    <ul>
+                        <li class="hover-link nav-item" id="education" onclick="onNavItemClick('education')">Education
+                        </li>
+                        <li class="hover-link nav-item" id="finance" onclick="onNavItemClick('finance')">Finance</li>
+                        <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('politics')">Politics</li>
+                        <li class="hover-link nav-item" id="top-news" onclick="onNavItemClick('top-news')">Top News</li>
+                        <li class="hover-link nav-item" id="technoloty" onclick="onNavItemClick('technology')">
+                            Technology</li>
+                    </ul>
+                </div>
+                <div class="serch-bar">
+                    <input type="text" id="news-input" placeholder="e.g.science">
+                    <button class="btn-primary" id="search-button">Search</button>
+                </div>
+
+            </div>
+        </nav>
+
+        <main>
+            <div class="cards-container" id="cards-container">
+
+            </div>
+        </main>
+
+        <template id="template-news-card">
+            <div class="card">
+                <div class="card-header">
+                    <img id="news-img" class="news-img" src="" alt="">
+                </div>
+                <div class="card-content">
+                    <h3 id="news-title" class="news-title">News Title</h3>
+                    <h6 id="news-source" class="news-source">News Source</h6>
+                    <p id="news-desc" class="news-desc">News Description</p>
+                    <div class="btn-wrapper">
+                        <a href="" id="read-more-button" class="card-button" target="_blank">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </template>
+
+
+        <script src="script.js">
+        </script>
+    </body>
+
+</html>

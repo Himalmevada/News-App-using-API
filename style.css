@@ -1,0 +1,167 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* :root {
+  --primary-text-color: #183b56;
+  --secondary-text-color: #577592;
+  --accent-color: #2294ed;
+  --accent-color-dark: #1d69a3;
+} */
+
+body {
+  font-family: "poppins", sans-serif;
+  color: #183b56;
+  background-color: #f1f1f1;
+}
+
+p {
+  font-family: "robot", sans-serif;
+  color: #577592;
+  line-height: 1.4rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  max-width: 1180px;
+  margin-inline: auto;
+  overflow: hidden;
+}
+
+nav {
+  background-color: #fff;
+  box-shadow: 0 0 4px #bbd0e2;
+  /* position: fixed; */
+  top: 0;
+  z-index: 99;
+  left: 0;
+  right: 0;
+}
+
+.main-nav {
+  justify-content: space-between;
+  padding: 8px;
+}
+
+p .normal {
+  font-weight: normal;
+}
+
+p .thick {
+  font-weight: bold;
+}
+
+p .thicker {
+  font-weight: 900;
+}
+
+.nav-item {
+  /* background-color: red; */
+  display: inline-block;
+  margin: 20px 10px;
+  font-size: 18px;
+  color: #1d69a3;
+}
+
+.nav-item:hover {
+  color: rgb(1, 66, 98);
+}
+
+.logo-img {
+  max-width: 70px;
+  height: auto;
+}
+
+.company-logo img {
+  width: 120px;
+}
+
+main {
+  margin: 20px 10px;
+}
+
+.card {
+  padding: 20px;
+}
+
+/* Flex Code --- Start */
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.cards-container > div {
+  width: 490px;
+  min-height: 550px;
+}
+
+/* Flex Code --- End */
+
+.card .card-header .news-img {
+  max-height: 230px;
+  width: 100%;
+  height: auto;
+}
+
+.card-content {
+  padding: 20px;
+  background-color: #e5e4e4;
+}
+
+.news-title {
+  margin: 10px 0;
+}
+
+.news-source {
+  margin: 10px 0;
+}
+
+.news-desc {
+  padding: 10px 0;
+}
+
+.nav-item {
+  cursor: pointer;
+}
+
+#news-input {
+  padding: 10px;
+  outline: none;
+  border: 1.5px solid #1d69a3;
+  margin-right: 20px;
+}
+
+.btn-primary,
+.card-button {
+  background-color: #1d69a3;
+  color: #f3faff;
+  padding: 10px;
+  border: none;
+  font-size: 16px;
+}
+
+.btn-primary:hover,
+.card-button:hover {
+  background-color: rgb(2, 91, 136);
+}
+
+.btn-wrapper {
+  padding: 20px 0;
+}
